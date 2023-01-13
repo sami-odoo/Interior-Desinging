@@ -3,3 +3,4 @@ interior_admin,Admin User,model_design_interior,,1,1,1,1
 interior_design.access_design_interior_rennovation,access_design_interior_rennovation,interior_design.model_design_interior_rennovation,,1,1,1,1
 interior_design.access_consultaion_virtual_meet,access_consultaion_virtual_meet,interior_design.model_consultaion_virtual_meet,,1,1,1,1
 interior_design.access_consultaion_real_meet,access_consultaion_real_meet,interior_design.model_consultaion_real_meet,,1,1,1,1
+interior_design.access_rennovation_stories,access_rennovation_stories,interior_design.model_rennovation_stories,,1,1,1,1

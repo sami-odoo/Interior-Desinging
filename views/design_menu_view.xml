@@ -3,14 +3,17 @@
 <odoo>
     <menuitem id="design_menu_root" name="Interior Design">
          <menuitem id="design_first_level_menu" name="Consultation">
-                <menuitem id="design_menu_action1"  name="meeting">
-                    <menuitem id="virtual_menu_action" name="virtual" action="rennovation_virtual_meet_action"/>
-                    <menuitem id="real_menu_action" name="real" action=""/>
+                <menuitem id="design_menu_action1"  name="Meeting Types">
+                   <menuitem id="consultaion_real_meet_action1" action="consultation_real_meet_action" name="Real Meet"/>
+                   <menuitem id="consultaion_virtual_meet_action1" action="consultation_virtual_meet_action" name="Virtual Meet"/>
                 </menuitem>
          </menuitem>
+
          <menuitem id="rennovation_first_level_menu" name="Rennovation" >
                 <menuitem id="rennovation_menu_action1" action="interior_design_rennovation" name="Furniture"/>
                 <menuitem id="rennovation_menu_action2" action="interior_design_rennovation" name="Paint"/>
          </menuitem>
+
+         <menuitem id="stories_first_level" name="Stories" action="stories_action"/>
     </menuitem>
 </odoo>
