@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <odoo>
-    <menuitem id="design_menu_root" name="Interior Design">
-         <menuitem id="design_first_level_menu" name="Consultation">
-                <menuitem id="design_menu_action1"  name="Meeting Types">
+    <menuitem id="design_menu_root" name="Interior Design" action="interior_design_action">
+         <menuitem id="design_first_level_menu" name="Consultation" >
+                <menuitem id="design_menu_action1"  name="Enquiry">
                    <menuitem id="consultaion_real_meet_action1" action="consultation_real_meet_action" name="Real Meet"/>
                    <menuitem id="consultaion_virtual_meet_action1" action="consultation_virtual_meet_action" name="Virtual Meet"/>
                 </menuitem>
