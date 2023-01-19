@@ -4,3 +4,5 @@ interior_design.access_design_interior_rennovation,access_design_interior_rennov
 interior_design.access_consultaion_virtual_meet,access_consultaion_virtual_meet,interior_design.model_consultaion_virtual_meet,,1,1,1,1
 interior_design.access_consultaion_real_meet,access_consultaion_real_meet,interior_design.model_consultaion_real_meet,,1,1,1,1
 interior_design.access_rennovation_stories,access_rennovation_stories,interior_design.model_rennovation_stories,,1,1,1,1
+type_admin,type user,model_interior_design_property_type,,1,1,1,1
+paint_user,paint admin,model_design_interior_paint,,1,1,1,1

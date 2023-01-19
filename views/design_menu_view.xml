@@ -11,7 +11,7 @@
 
          <menuitem id="rennovation_first_level_menu" name="Rennovation" >
                 <menuitem id="rennovation_menu_action1" action="interior_design_rennovation" name="Furniture"/>
-                <menuitem id="rennovation_menu_action2" action="interior_design_rennovation" name="Paint"/>
+                <menuitem id="rennovation_menu_action2" action="interior_paint_action" name="Paint"/>
          </menuitem>
 
          <menuitem id="stories_first_level" name="Stories" action="stories_action"/>

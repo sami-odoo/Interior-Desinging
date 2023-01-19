@@ -12,9 +12,12 @@
             'views/consultation_virtual_meet_view.xml',
             'views/consultation_real_meet_view.xml',
             'views/rennovation_stories_view.xml',
+            'views/design_interior_paint.xml',
             'views/design_menu_view.xml'
     ],
     'demo':[
+        'demo/consultation_real_meet_demo.xml',
+        'demo/type_of_property_demo.xml'
 
     ],
     'installable': True,

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+        <record id="property_type_demo1" model="interior.design.property.type">
+            <field name="name">Villa</field>
+        </record>
+    
+        <record id="property_type_demo2" model="interior.design.property.type">
+            <field name="name">Penthouse</field>
+        </record> 
+    </data>
+</odoo>

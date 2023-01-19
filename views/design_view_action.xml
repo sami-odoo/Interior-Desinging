@@ -2,7 +2,7 @@
 <odoo>
 
     <record id="interior_design_action" model="ir.actions.act_window">
-        <field name="name">Consultation</field>
+        <field name="name">Interior</field>
         <field name="res_model">design.interior</field>
         <field name="view_mode">tree,form</field>
         <field name="help" type="html">
@@ -18,9 +18,6 @@
        <field name="arch" type="xml">
             <tree string="Channel" >
                 <field name="name" string="Title"/>
-                <field name="property_type" string="Property Type"/>
-                <field name="painting" string="Painting"/>
-                <field name="coloring" string="Coloring"/>
             </tree>
         </field>
     </record>

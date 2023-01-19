@@ -18,9 +18,9 @@
         <field name="arch" type="xml">
              <tree string="Channel" >
                  <field name="customer_name" string="Title"/>
-                 <field name="property_type" string="Property Type"/>
-                 <field name="painting" string="Painting"/>
-                 <field name="coloring" string="Coloring"/>
+                 <field name="property_painting" string="Painting"/>
+                 <field name="property_furnishing" string="Furnishing"/>
+                 <field name="type_id" string="Property Type"/>
              </tree>
          </field>
      </record>
@@ -35,14 +35,18 @@
                         <field name="customer_name" string="Customer name" />
                     </h1>
                     <br/>    
-                    <br/>
                     <group>
-                        <field name="property_type" string="Property Type"/>   
+                        <field name="type_id" string="Property Type"/>
                     </group>
-                    <group>
-                        <field name="property_painting" string="Painting"/>
-                        <field name="property_coloring" string="Painting"/>
-                    </group>
+                    <notebook>
+                        <page string="Detail">
+                            <group>
+                                <field name="property_painting" string="Painting"/>
+                                <field name="property_furnishing" string="Furnishing"/>
+                                <field name="total_cost" string="Total Cost"/>
+                            </group>
+                        </page>
+                    </notebook>
                 </sheet>
             </form>
          </field>
