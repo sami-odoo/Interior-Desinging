@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="customer_info_action" model="ir.actions.act_window">
+        <field name="name">Customer Info</field>
+        <field name="res_model">customer.info</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Employees Yet
+            </p>
+        </field>
+    </record>
+
+    <record id="customer_info_list_view" model="ir.ui.view">
+       <field name="name">Customer Info List View</field>
+       <field name="model">customer.info</field>
+       <field name="arch" type="xml">
+            <tree string="Channel" >
+                <field name="name" string="Customer Name"/>
+                <field name="price" string="Bill"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="customer_info_form_view" model="ir.ui.view">
+        <field name="name">Customer Info Form View</field>
+        <field name="model">customer.info</field>
+        <field name="arch" type="xml">
+             <form>
+                <sheet>
+                    <h1><field name="name" string="Customer Name"/></h1>
+                    <group>
+                        <field name="price" string="Bill"/>
+                    </group>
+                </sheet>
+             </form>
+         </field>
+     </record>
+</odoo>

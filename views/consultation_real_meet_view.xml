@@ -21,6 +21,8 @@
                  <field name="property_painting" string="Painting"/>
                  <field name="property_furnishing" string="Furnishing"/>
                  <field name="type_id" string="Property Type"/>
+                 <field name="date_availablity" string="Meeting Date"/>
+                 <field name="meeting_state" string="Meeting State"/>
              </tree>
          </field>
      </record>
@@ -30,13 +32,23 @@
         <field name="model">consultaion.real.meet</field>
         <field name="arch" type="xml">
             <form string="test">
+                <header>
+                    <span attrs="{'invisible': [('meeting_state', 'in', ('done','cancelled'))]}">
+                        <button name="perform_cancel" type="object" string="Cancel" />
+                    </span>
+                    <field name="meeting_state" widget="statusbar" options="{'clickable': '1'}"/>
+                </header>
                 <sheet>
                     <h1> 
                         <field name="customer_name" string="Customer name" />
                     </h1>
                     <br/>    
                     <group>
-                        <field name="type_id" string="Property Type"/>
+                        <group><field name="type_id" string="Property Type"/></group>
+                        <group>
+                            <field name="date_availablity" string="Meeting Date"/>
+                            <field name="meeting_state" string="Meeting State"/>
+                        </group>
                     </group>
                     <notebook>
                         <page string="Detail">
@@ -46,8 +58,22 @@
                                 <field name="total_cost" string="Total Cost"/>
                             </group>
                         </page>
+                        <page string="Paint" attrs="{'invisible': [('property_painting', '!=', True)]}">
+                            <group>
+                                <field name="paint_colors" />
+                            </group>
+                        </page>
+                        <page string="Consultant">
+                            <group>
+                            </group>
+                        </page>
                     </notebook>
                 </sheet>
+                <div class="oe_chatter">
+                    <field name="customer_name" />
+                    <field name="type_id" />
+                    <field name="paint_colors" />
+                </div>
             </form>
          </field>
      </record>
