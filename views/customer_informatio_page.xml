@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="customer_info_action" model="ir.actions.act_window">
+    <!-- <record id="customer_info_action" model="ir.actions.act_window">
         <field name="name">Customer Info</field>
         <field name="res_model">customer.info</field>
         <field name="view_mode">tree,form</field>
@@ -9,7 +9,7 @@
                 No Employees Yet
             </p>
         </field>
-    </record>
+    </record> -->
 
     <record id="customer_info_list_view" model="ir.ui.view">
        <field name="name">Customer Info List View</field>
@@ -18,6 +18,8 @@
             <tree string="Channel" >
                 <field name="name" string="Customer Name"/>
                 <field name="price" string="Bill"/>
+                <field name="emp_id" string="Consultant"/>
+                <field name="work_done" string="Work Done"/>
             </tree>
         </field>
     </record>
@@ -30,9 +32,17 @@
                 <sheet>
                     <h1><field name="name" string="Customer Name"/></h1>
                     <group>
-                        <field name="price" string="Bill"/>
+                        <group><field name="price" string="Bill"/></group>
+                        <group><field name="emp_id" string="Consultant"/></group>
                     </group>
+                    <br/>
+                    <group><field name="work_done" string="Work Done"/></group>
                 </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" />
+                    <field name="message_ids" />
+                    <field name="activity_ids" />
+               </div>
              </form>
          </field>
      </record>

@@ -16,7 +16,7 @@
        <field name="name">Employee List View</field>
        <field name="model">interior.employee.dat</field>
        <field name="arch" type="xml">
-            <tree string="Channel" >
+            <tree string="Channel">
                 <field name="name" string="Employee name"/>
                 <field name="tag_id" string="Employee Tags"/>
             </tree>
@@ -33,8 +33,32 @@
                     <group>
                         <field name="tag_id" string="Employee Tags"/>
                     </group>
+                    <br/>
+                        <fields name="cust_ids" string="Custoer"/>
+                    <br/>
+                    <notebook>
+                        <page name="unique_name" string="Customers">
+                            <group><fields name="customer_ids"/></group>
+                        </page>
+                    </notebook>
                 </sheet>
              </form>
          </field>
+     </record>
+
+     <record id="employee_info_search_id" model="ir.ui.view">
+        <field name="name">Employee Search View</field>
+        <field name="model">interior.employee.dat</field>
+        <field name="arch" type="xml">
+            <search string="Search Views">
+                <field name="name" string="Employee name"/>
+                <filter name="tag_id" string="Best Employee" domain="[('tag_id','=','Best')]"/>
+                <filter name="tag_id" string="Hard Working" domain="[('tag_id','=','Hard working')]"/>
+                <filter name="tag_id" string="Under Performing" domain="[('tag_id','=','Under Performing')]"/>
+                <group expand="1">
+                    <filter name="tag_id" context="{'group_by':'tag_id'}" string="Epmloyees Badge"/>
+                </group>
+            </search>
+        </field>
      </record>
 </odoo>

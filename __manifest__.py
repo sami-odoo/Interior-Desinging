@@ -5,9 +5,8 @@
     'summary': 'It is to decorate your real estate,property,home,office',
     'description': 'App for interior desiging',
     'author': 'sami',
-    'depends':[
-        'mail'
-    ],
+    'license': 'LGPL-3',
+    'depends':['mail'],
     'data':[
             'security/ir.model.access.csv',
             'views/design_view_action.xml',
@@ -22,11 +21,12 @@
             'views/design_menu_view.xml'
     ],
     'demo':[
+        'demo/employee_info_demo.xml',
         'demo/consultation_real_meet_demo.xml',
         'demo/type_of_property_demo.xml',
         'demo/paint_colors_demo.xml',
-        'demo/employee_tag_demo.xml'
-
+        'demo/employee_tag_demo.xml',
+        'demo/customer_demo_data.xml'
     ],
     'installable': True,
     'application': True,

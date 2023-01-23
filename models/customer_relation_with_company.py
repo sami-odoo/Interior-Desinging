@@ -5,3 +5,4 @@ class Customer_relations_with_company(models.Model):
     _description = "Defines the type of relation customer has with company"
 
     name = fields.Char(required=True)
+    
